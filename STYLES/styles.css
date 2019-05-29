@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.4 rem;
   line-height: normal;
 }
 
@@ -42,8 +42,6 @@ p {
   margin-bottom: -100px;
   z-index: 2;
 }
-
-
 
 .content-module {
   display: flex;
@@ -71,7 +69,7 @@ p {
 
 .inner-intro-section svg {
   height: 125px;
-  transition: height 2s;
+  transition: height .5s;
 }
 
 .inner-intro-section svg:hover {
@@ -85,7 +83,6 @@ p {
 
 #header {
   height: 500px;
-  border: 1px solid #000;
   overflow: hidden;
   z-index: 1;
   position: relative;
@@ -114,6 +111,8 @@ p {
 .video-header h2 {
   text-transform: uppercase;
   font-weight: lighter;
+  font-size: 1.4rem;
+  line-height: normal;
 }
 
 #navigation--main {
@@ -137,7 +136,7 @@ p {
 }
 
 a.button{
-  text-decoration: none;
+  text-decoration: none!important;
   color: black;
   display: block;
   margin: 10px 0;
@@ -147,7 +146,13 @@ a.button{
   border: 2px solid RGBA(0,0,0,0.3)
 }
 
+a.button:hover{
+  background-color: RGB(0,255,255 ,0.4);
+  color: purple;
+}
+
 #navigation--main ul li a:hover, .button {
+  text-decoration: none;
   background-color: #fff;
   border-radius: 50px;
   box-shadow: 5px 5px RGBA(0,0,0,0.3);
@@ -177,7 +182,7 @@ a.button{
 .text-module {
   
   border: 2px dotted black;
-  border-radius:10px;
+  border-radius: 10px;
   margin: 15px 0;
 }
 
@@ -217,5 +222,28 @@ a.button{
   margin: 20px 10px 0;
 }
 
+footer ul {
+  list-style:none;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline;
+}
 
 
+footer ul li a {
+  color: RGBA(0,0,0,1.0);
+  margin: 0 10px 0 0;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: RGBA(255,0,255,1.0)
+}
+
+.dragon {
+  width: auto;
+  position:relative;
+  left: 425px;
+}
